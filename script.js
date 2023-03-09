@@ -15,9 +15,10 @@ function colorTimeMatch(){
   //obtain id, convert to integer and store it into sheduled hr - id corresponds
   //to the number for the hr of the day that text area is assigned
 
-  scheduleTime = parseInt($this).toLocaleString (id);
+  $(".time-block").each(function () {
+    var scheduleTime = parseInt($(this).attr("id").split("hour")[1]);
   // console.log(scheduleTime, "shedule time", currentTime);
-})
+)
 
   if (scheduleTime === currentTime) {
     $(this).$(".time-block").addClass(present);
