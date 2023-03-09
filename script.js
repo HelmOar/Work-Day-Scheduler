@@ -1,7 +1,38 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-$(function () {
+  // TODO: Add code to display the current date in the header of the page.
+var scheduleTime = $(".time-block");
+var currentTime = dayjs().format('dddd, MMM D, YYYY h:mm A');
+$('#currentDay').text(currentTime);
+
+function colorTimeMatch(){
+  //obtain current time
+  //checking current time in console log
+  //obtaining sheduled time in corresponding time block
+// each element tagged in text area
+
+  //obtain id, convert to integer and store it into sheduled hr - id corresponds
+  //to the number for the hr of the day that text area is assigned
+
+  scheduleTime = parseInt($this).toLocaleString (id);
+  // console.log(scheduleTime, "shedule time", currentTime);
+})
+
+  if (scheduleTime === currentTime) {
+    $(this).$(".time-block").addClass(present);
+  }
+
+    else if (scheduleTime > currentTime) {
+      $(this).$(".time-block").addClass(future);
+    }
+      else {
+        $(this).addClass (past)
+      }
+    
+}
+
+// $(function () {
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
   // local storage. HINT: What does `this` reference in the click listener
@@ -14,10 +45,10 @@ $(function () {
   // attribute of each time-block be used to conditionally add or remove the
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
+
+
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
   // attribute of each time-block be used to do this?
   //
-  // TODO: Add code to display the current date in the header of the page.
-});
