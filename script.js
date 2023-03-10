@@ -3,6 +3,7 @@
 // in the html.
   // TODO: Add code to display the current date in the header of the page.
 var scheduleTime = $(".time-block");
+var currentHour = dayjs().hour()
 var currentTime = dayjs().format('dddd, MMM D, YYYY h:mm A');
 $('#currentDay').text(currentTime);
 
@@ -11,27 +12,41 @@ function colorTimeMatch(){
   //checking current time in console log
   //obtaining sheduled time in corresponding time block
 // each element tagged in text area
-
   //obtain id, convert to integer and store it into sheduled hr - id corresponds
   //to the number for the hr of the day that text area is assigned
 
   $(".time-block").each(function () {
-    var scheduleTime = parseInt($(this).attr("id").split("hour")[1]);
+    var scheduleTime = parseInt($(this).attr("id").split("-")[1]);
   // console.log(scheduleTime, "shedule time", currentTime);
-)
+// accessing all class of timeblock which is the big div.. already declared on 18 
 
-  if (scheduleTime === currentTime) {
-    $(this).$(".time-block").addClass(present);
+  if (scheduleTime === currentHour) {
+    $(this)
+    .removeClass("past");
+    $(this)
+    .removeClass("future");
+    $(this)
+    .addClass("present");
   }
 
-    else if (scheduleTime > currentTime) {
-      $(this).$(".time-block").addClass(future);
+    else if (scheduleTime > currentHour) {
+      $(this)
+      .removeClass("past");
+      $(this)
+      .removeClass("present");
+      $(this)
+      .addClass("future");
     }
       else {
-        $(this).addClass (past)
+        $(this)
+        .removeClass("present");
+        $(this)
+        .removeClass("future");
+        $(this)
+        .addClass("past");
       }
     
-}
+});
 
 // $(function () {
   // TODO: Add a listener for click events on the save button. This code should
@@ -51,5 +66,6 @@ function colorTimeMatch(){
   //
   // TODO: Add code to get any user input that was saved in localStorage and set
   // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  //
+  // attribute of each time-block be used to do this
+}
+colorTimeMatch()
