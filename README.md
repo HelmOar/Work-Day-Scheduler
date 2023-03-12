@@ -2,18 +2,13 @@
 
 ## Description
 
-Creation of a simple callender application that alows a user to see their daily schedule at a glance. This app runs on the browser, using local storage to save events for each day and features dynamically updated HTML and CSS powered by JQuery. Design elements are supported by Bootstrap, and showcase modern colours that change according to the hour passed.
+Creation of a simple calender application that alows a user to see their daily schedule at a glance. This app runs on the browser, using local storage to save events for each day and features dynamically updated HTML and CSS powered by JQuery. Design elements are supported by Bootstrap, and showcase modern colours that change according to the hour passed.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
+![screenshot of Work Day Scheduler](./asssets/Work-Day-Scheduler.png)
 ## Credits
 
 Caroline Helmore 
