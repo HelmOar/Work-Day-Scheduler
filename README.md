@@ -2,7 +2,7 @@
 
 ## Description
 
-Creation of a simple callender application that alows a user to see their daily schedule at a glance. This app runs on the browser, using local storage to save events for each day and features dynamically updated HTML and CSS powered by JQuery. Design elements are supported by Bootstrap, and show modern colours that change according to whether the hour has passed.
+Creation of a simple callender application that alows a user to see their daily schedule at a glance. This app runs on the browser, using local storage to save events for each day and features dynamically updated HTML and CSS powered by JQuery. Design elements are supported by Bootstrap, and showcase modern colours that change according to the hour passed.
 
 ## Usage
 
