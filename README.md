@@ -6,7 +6,7 @@ Creation of a simple calender application that alows a user to see their daily s
 
 ## Usage
 
-
+https://user-images.githubusercontent.com/122151785/224519281-521e1413-2879-491b-88e7-b997d63dd01c.mp4
 
 ![screenshot of Work Day Scheduler](./asssets/Work-Day-Scheduler.png)
 ## Credits
@@ -17,8 +17,6 @@ chelmore1@bigpond.com
 ## License
 
 N/A
-
-
 
 ## Badges
 
