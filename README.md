@@ -2,7 +2,7 @@
 
 ## Description
 
-Creation of a simple calender application that alows a user to see their daily schedule at a glance. This app runs on the browser, using local storage to save events for each day and features dynamically updated HTML and CSS powered by JQuery. Design elements are supported by Bootstrap, and showcase modern colours that change according to the hour passed.
+Creation of a simple calender application that alows a user to see their daily schedule at a glance. This app runs on the browser, using local storage to save events for each day and features dynamically updated HTML and CSS powered by JQuery. Design elements are supported by Bootstrap, and showcase modern colours that change according to the hour passed. I was interested to explore Bootstrap further and made some modifications to the design, however these do not affect the functionality of the app.
 
 ## Usage
 
